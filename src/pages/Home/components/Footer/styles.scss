@@ -51,7 +51,9 @@
   }
 }
 
-.container-footer-icon-wrap {
+.container-footer-icon-wrap {  
+  height: 30px;
+  width: 30px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
