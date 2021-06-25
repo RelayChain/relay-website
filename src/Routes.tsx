@@ -23,9 +23,11 @@ export default function Routes() {
         <Route exact path={PublicRoutes.Home}>
           <HomePage />
         </Route>
-        <Route path={PublicRoutes.Partners}>
-          <PartnersPage />
-        </Route>
+        {/*
+          <Route path={PublicRoutes.Partners}>
+            <PartnersPage />
+          </Route>
+        */}
       </Switch>
     </BrowserRouter>
   );

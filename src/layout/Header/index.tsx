@@ -1,5 +1,4 @@
 import "./styles.scss";
-import RelayWhiteLogo from "../../assets/images/relay-logo-circle-white.svg";
 
 import {
   BarIcon,
@@ -7,6 +6,9 @@ import {
 } from "../../pages/Home/components/MenuIcons/index";
 import { useEffect, useState } from "react";
 import { useHistory, useLocation } from "react-router-dom";
+
+import RelayIcon from "../../assets/images/relay-icon.svg";
+import RelayType from "../../assets/images/relay-type.svg";
 
 export default function Header() {
   const history = useHistory();
@@ -52,8 +54,13 @@ export default function Header() {
       <div className="container">
         <div className="header-container">
           <div className="header-logo" onClick={() => handleClick("/")}>
-            <img src={RelayWhiteLogo} alt={""} />
+            <img src={RelayIcon} alt={"Relay Icon"} />
           </div>
+          <div className="header-logo-type" onClick={() => handleClick("/")}>
+            <img src={RelayType} alt={"Relay"} />
+          </div>
+
+          {/*
 
           <ul className="link-list">
             <li
@@ -75,6 +82,7 @@ export default function Header() {
               {mobileMenuOpen ? <CloseIcon /> : <BarIcon />}
             </li>
           </ul>
+          */}
         </div>
 
         {mobileMenuOpen && (
