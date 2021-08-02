@@ -1,44 +1,44 @@
 import "./styles.scss";
+
 import RelayWhiteLogo from "../../../../assets/images/relay-logo-circle-white.svg";
 
 const Footer = () => {
   return (
     <footer className="home_footer">
       <div className="container container-footer">
-        <div className="container-footer-icon-wrap">
-          <img src={RelayWhiteLogo} alt={""} />
-        </div>
         <ul>
+          {/*
+            <li>
+              <a
+                href="https://www.coingecko.com/en/coins/0-exchange"
+                target="_blank"
+                rel="noreferrer"
+              >
+                coingecko
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://coinmarketcap.com/currencies/zero-exchange/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                coinmarketcap
+              </a>
+            </li>
+          */}
           <li>
             <a
-              href="https://www.coingecko.com/en/coins/0-exchange"
+              href="https://www.reddit.com/r/RelayChain/"
               target="_blank"
               rel="noreferrer"
             >
-              coingecko
+              reddit
             </a>
           </li>
           <li>
             <a
-              href="https://coinmarketcap.com/currencies/zero-exchange/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              coinmarketcap
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.dextools.io/app/uniswap/pair-explorer/0x40f0e70a7d565985b967bcdb0ba5801994fc2e80"
-              target="_blank"
-              rel="noreferrer"
-            >
-              dextools
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/zeroexchange"
+              href="https://github.com/RelayChain"
               target="_blank"
               rel="noreferrer"
             >
@@ -47,16 +47,16 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="https://www.facebook.com/ZeroExchange-105556548092263"
+              href="https://www.youtube.com/channel/UC8q_XLKQtI-x5PUa4Rg3RrQ"
               target="_blank"
               rel="noreferrer"
             >
-              facebook
+              youtube
             </a>
           </li>
           <li>
             <a
-              href="https://twitter.com/officialzerodex"
+              href="https://twitter.com/relay_chain"
               target="_blank"
               rel="noreferrer"
             >
@@ -65,7 +65,7 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="https://discord.gg/XtZTNVTX5T"
+              href="https://discord.gg/sm6sbUFY"
               target="_blank"
               rel="noreferrer"
             >
@@ -74,7 +74,7 @@ const Footer = () => {
           </li>
           <li>
             <a
-              href="https://t.me/ZeroExchangeCommunity"
+              href="https://t.me/relaychaincommunity"
               target="_blank"
               rel="noreferrer"
             >

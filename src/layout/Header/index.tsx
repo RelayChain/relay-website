@@ -60,17 +60,11 @@ export default function Header() {
             <img src={RelayType} alt={"Relay"} />
           </div>
 
-          {/*
+
 
           <ul className="link-list">
             <li
-              onClick={() => handleClick("/partners")}
-              className="is-hidden-touch"
-            >
-              Launch your token
-            </li>
-            <li
-              onClick={() => goToSite("https://app.0.exchange")}
+              onClick={() => goToSite("https://app.relaychain.com")}
               className="is-hidden-touch"
             >
               Use App
@@ -82,40 +76,35 @@ export default function Header() {
               {mobileMenuOpen ? <CloseIcon /> : <BarIcon />}
             </li>
           </ul>
-          */}
         </div>
 
         {mobileMenuOpen && (
           <ul className="mobile-menu animated fadeInUpTiny d250">
             <li
-              onClick={() => goToSite("https://medium.com/@OfficialZeroDex/")}
+              onClick={() => goToSite("https://medium.com/@Relay_Chain")}
             >
               Blog
             </li>
             <li
               onClick={() =>
                 goToSite(
-                  "https://0exchangestatic.blob.core.windows.net/whitepaper/0Whitepaper.pdf"
+                  "https://docs.relaychain.com"
                 )
               }
-              className={`${pathname === "/learn-more" ? "active" : ""}`}
             >
-              Whitepaper
+              Docs
             </li>
             <li
-              onClick={() => goToSite("/0_Liquidity_Mining.pdf")}
-              className={`${pathname === "/learn-more" ? "active" : ""}`}
+              onClick={() =>
+                goToSite(
+                  "https://t.me/relaychainannouncements"
+                )
+              }
             >
-              Liquidity Mining
+              Announcements
             </li>
             <li
-              onClick={() => goToSite("/partners")}
-              className="is-hidden-desktop"
-            >
-              Launch your token
-            </li>
-            <li
-              onClick={() => goToSite("https://app.0.exchange")}
+              onClick={() => goToSite("https://app.relaychain.com")}
               className="is-hidden-desktop"
             >
               Use App
