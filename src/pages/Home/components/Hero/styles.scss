@@ -94,6 +94,8 @@
 
 .relative-wrapper-img {
   position: relative;
+  margin-left: auto;
+  margin-right: auto;
   img {
     max-width: none !important;
     @media screen and (max-width: 767px) {

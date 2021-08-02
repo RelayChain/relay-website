@@ -50,10 +50,8 @@ const Hero = ({ goToSite }) => (
     </div>
     <div className="relative-wrapper-img animated fadeInDownTiny d300 delay150">
       <div className="devices-img">
-      <img src="/devices.png" alt="Devices" />
+        <img src="/landing-one.png" alt="Landing" />
       </div>
-      <img src="/phone.png" className="phone-img" alt="Phone" />
-      <img src="/tablet.png" className="tablet-img" alt="Tablet" />
     </div>
   </div>
 );
