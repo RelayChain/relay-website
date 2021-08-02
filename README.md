@@ -1,6 +1,6 @@
 # 0.exchange
 
-Official landing page for https://0.exchange
+Official landing page for https://relaychain.com
 
 ## Available Scripts
 
