@@ -69,6 +69,10 @@ export default function Header() {
             >
               Use App
             </li>
+            <li className="is-hidden-touch"
+              onClick={() => goToSite('https://relaychainassets.blob.core.windows.net/$web/whitepaper/Relay_Bridging_as_a_Service_DEFI_WP.pdf')}>
+              Whitepaper
+            </li>
             <li
               className="menu-toggle"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -108,6 +112,10 @@ export default function Header() {
               className="is-hidden-desktop"
             >
               Use App
+            </li>
+            <li className="is-hidden-desktop"
+              onClick={() => goToSite('https://relaychainassets.blob.core.windows.net/$web/whitepaper/Relay_Bridging_as_a_Service_DEFI_WP.pdf')}>
+              Whitepaper
             </li>
           </ul>
         )}
