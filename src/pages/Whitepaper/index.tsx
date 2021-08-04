@@ -15,7 +15,7 @@ export default function Whitepaper() {
   const [pages, setPages] = useState(1);
 
   const canvasEl = useRef(null);
-  const url = "https://relaychainassets.blob.core.windows.net/$web/whitepaper/Relay_Bridging_as_a_Service_DEFI_WP.pdf";
+  const url = "https://docs.relaychain.com/pdf/bridging-as-a-service-defi-whitepaper.pdf";
 
   const [loading, numPages] = usePdf({
     file: url,
