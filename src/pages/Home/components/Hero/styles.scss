@@ -121,7 +121,6 @@
     left: 0px;
   }
   @media screen and (max-width: 1215px) {
-    left: -170px;
   }
   @include until($desktop) {
     left: 50%;
