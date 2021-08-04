@@ -70,7 +70,7 @@ export default function Header() {
               Use App
             </li>
             <li className="is-hidden-touch"
-              onClick={() => goToSite('https://relaychainassets.blob.core.windows.net/$web/whitepaper/Relay_Bridging_as_a_Service_DEFI_WP.pdf')}>
+              onClick={() => handleClick('/whitepaper')}>
               Whitepaper
             </li>
             <li

@@ -1,6 +1,8 @@
 import './app.scss';
 
 import {
+  faArrowLeft,
+  faArrowRight,
   faBars,
   faBolt,
   faCheck,
@@ -11,7 +13,7 @@ import {
   faQuestion,
   faRocket,
   faSearch,
-  faTimes,
+  faTimes
 } from '@fortawesome/free-solid-svg-icons'
 import { faDiscord, faFacebook, faTelegram, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
@@ -35,6 +37,8 @@ library.add(
   faTimes,
   faGift,
   faBolt,
+  faArrowLeft,
+  faArrowRight
 )
 
 export default function App() {

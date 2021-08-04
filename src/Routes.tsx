@@ -6,10 +6,11 @@ import PartnersPage from "./pages/Partners";
 import React from "react";
 import { RedirectPathToHomeOnly } from './redirects';
 import ScrollToTop from "./shared/components/ScrollToTop";
+import Whitepaper from "./pages/Whitepaper";
 
 export enum PublicRoutes {
   Home = "/",
-  // Partners = "/partners",
+  Whitepaper = "/whitepaper",
 }
 
 export default function Routes() {
@@ -24,12 +25,10 @@ export default function Routes() {
         <Route exact path={PublicRoutes.Home}>
           <HomePage />
         </Route>
+        <Route exact path={PublicRoutes.Whitepaper}>
+          <Whitepaper />
+        </Route>
         <Route component={RedirectPathToHomeOnly} />
-        {/*
-          <Route path={PublicRoutes.Partners}>
-            <PartnersPage />
-          </Route>
-        */}
       </Switch>
     </BrowserRouter>
   );
