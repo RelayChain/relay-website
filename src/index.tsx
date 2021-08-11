@@ -3,7 +3,13 @@ import './index.css';
 import App from './App';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import TagManager from 'react-gtm-module'
 import reportWebVitals from './reportWebVitals';
+
+const tagManagerArgs = {
+    gtmId: 'GTM-5WLVS3B'
+}
+TagManager.initialize(tagManagerArgs)
 
 ReactDOM.render(
   <React.StrictMode>
