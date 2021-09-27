@@ -1,6 +1,6 @@
 import "./styles.scss";
 
-import RelayWhiteLogo from "../../../../assets/images/relay-logo-circle-white.svg";
+import RelayWhiteLogo from "../../../../styles/relay-logo-circle-white.svg";
 
 const Footer = () => {
   return (
