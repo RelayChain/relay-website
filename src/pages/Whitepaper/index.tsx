@@ -11,6 +11,8 @@ import bridgeLogo from "./../../styles/whitepaper/partners/Bridge.png"
 import halbornLogo from "./../../styles/whitepaper/partners/halborn_logo.png"
 import chartExLogo from "./../../styles/whitepaper/partners/ChartExLogo.png"
 import moonbeanLogo from "./../../styles/whitepaper/partners/Moonbeam.png"
+import soalrbeamLogo from "./../../styles/whitepaper/partners/soalrbeam.png"
+import moonriverLogo from "./../../styles/whitepaper/partners/MOVR.png"
 import chainLinkLogo from "./../../styles/whitepaper/partners/Chainlink.png"
 import web3Logo from "./../../styles/whitepaper/partners/web3api.png"
 import kaironLogo from "./../../styles/whitepaper/partners/kairon.svg"
@@ -42,8 +44,11 @@ import bsc_logo from './../../styles/whitepaper/bsc_logo.svg'
 import ethereum_logo from './../../styles/whitepaper/ethereum_logo.svg'
 import ksm_dot_logo from './../../styles/whitepaper/ksm_dot_logo.svg'
 import matic_logo from './../../styles/whitepaper/matic_logo.svg'
+import qidao_logo from './../../styles/whitepaper/qidao_logo.png'
 
 export default function Whitepaper() {
+  const wpVersion = 'White Paper Version 1.3'
+  const dataIssue = 'September 28, 2021'
   const scrollPosition = useScrollPosition()
   return (
     <div className="container-wp" >
@@ -60,8 +65,8 @@ export default function Whitepaper() {
               <div className="text">
                 <h1>RelayChain</h1>
                 <h2>Bridging DeFi</h2>
-                <h4>White Paper Version 1.0</h4>
-                <h4 className="letter-spacing">August 2nd, 2021</h4>
+                <h4>{wpVersion}</h4>
+                <h4 className="letter-spacing">{dataIssue}</h4>
               </div>
             </div>
           </div>
@@ -202,7 +207,7 @@ export default function Whitepaper() {
 
 
                 <div className="post_image">
-                  <a  data-lightbox="image-1">
+                  <a data-lightbox="image-1">
                     <img src={postLogo1} alt="image-1" /></a>
                 </div>
 
@@ -219,7 +224,7 @@ export default function Whitepaper() {
 
 
                 <p className="mb50">Cross-chain bridging produces a situation where native assets from Ethereum move to Avax or BSC and are subject to different supply and demand pressures, creating arbitrage opportunities. The fastest bridge will attract the most trading volume because it enables the most successful arbitrage trades. <i>Because of its speed, RELAY offers new arbitrage possibilities to traders wanting to access price discrepancy between blockchains, decentralized exchanges and dApps.</i></p>
-
+                <a className="mb30" target="_blank" href="https://medium.com/@Relay_Chain/the-relay-bridge-how-does-it-works-d46ee1c795b3">Learn more about how the bridge works &#8594;</a>
                 <h2 className="sub" id="nav_7"><span>The RELAY Model</span> (Bridging as a Service)</h2>
 
                 <p className="mb30" id="nav_8">Blockchain technology is rapidly evolving, and many more networks will be created in the coming years. It is important to recognize that bridge services will play a key role in transporting assets be- tween popular blockchains and enabling specialized blockchains to interconnect.</p>
@@ -278,7 +283,7 @@ export default function Whitepaper() {
                 <div className="partners first mb50">
                   <div className="item"><img src={btcLogo} alt="" /></div>
                   <div className="item"><img src={zokioLogo} alt="" /></div>
-                  <div className="item"><img src={avaxLogo} alt="" /></div>
+                  <div className="item image-title"><img src={avaxLogo} alt="" />AVALAUCH</div>
                   <div className="item"><img src={bridgeLogo} alt="" /></div>
                   <div className="item"><img src={chartExLogo} alt="" /></div>
                 </div>
@@ -314,9 +319,11 @@ export default function Whitepaper() {
                     <h3 className="blue mb10" id="nav_13">BaaS Partners</h3>
                     <ul className="logos">
                       <li className="logo-r">
-                        <img src={quickSwapLogo} alt="" />
+                        <img src={quickSwapLogo} className="baas" alt="" />
                       </li>
-                      <li><div className="soon"><span className="tag_blue" style={{ width: "27%" }}></span>SOON</div></li>
+                      <li className="logo-r">
+                        <img src={soalrbeamLogo} alt="" className="baas"/>
+                      </li>
                       <li><div className="soon"><span className="tag_blue" style={{ width: "50%" }}></span>SOON</div></li>
                       <li><div className="soon"><span className="tag_blue" style={{ width: "50%" }}></span>SOON</div></li>
                       <li><div className="soon"><span className="tag_blue" style={{ width: "35%" }}></span>SOON</div></li>
@@ -329,9 +336,12 @@ export default function Whitepaper() {
                     <ul className="logos">
                       <li className="logo-r">
                         <img src={avax_logo} alt="" />
-                        <span>Avax</span>
+                        <span>Avalanche</span>
                       </li>
-                      <li><div className="soon"><span className="tag_blue" style={{ width: "27%" }}></span>SOON</div></li>
+                      <li className="logo-r">
+                        <img src={moonriverLogo} alt="" />
+                        <span>Moonriver</span>
+                      </li>
                       <li className="logo-r">
                         <img src={heco_logo} alt="" />
                       </li>
@@ -349,7 +359,7 @@ export default function Whitepaper() {
                       </li>
                       <li className="logo-r">
                         <img src={matic_logo} alt="" />
-                        <span>MATIC/POLYGON</span>
+                        <span>POLYGON</span>
                       </li>
                       <li><div className="soon"><span className="tag_blue" style={{ width: "27%" }}></span>SOON</div></li>
                       <li><div className="soon"><span className="tag_blue" style={{ width: "43%" }}></span>SOON</div></li>
@@ -359,7 +369,7 @@ export default function Whitepaper() {
                     <h3 className="blue mb10">dApps</h3>
                     <ul className="logos">
                       <li className="logo-r">
-                        <img src="./../../styles/whitepaper/qidao_logo.png" alt="" />
+                        <img src={qidao_logo}alt="" />
                         <span>QiDao</span>
                       </li>
                     </ul>
@@ -371,7 +381,7 @@ export default function Whitepaper() {
                 <div className="partners mb50">
                   <div className="item"><img src={btcLogo} alt="" /></div>
                   <div className="item"><img src={zokioLogo} alt="" /></div>
-                  <div className="item"><img src={avaxLogo} alt="" /></div>
+                  <div className="item  image-title"><img src={avaxLogo} alt="" />AVALAUNCH</div>
                   <div className="item"><img src={bridgeLogo} alt="" /></div>
                   <div className="item"><img src={halbornLogo} alt="" /></div>
                   <div className="item"><img src={chartExLogo} alt="" /></div>
@@ -379,8 +389,8 @@ export default function Whitepaper() {
                   <div className="item"><img src={chainLinkLogo} alt="" /></div>
                   <div className="item"><img src={web3Logo} alt="" /></div>
                   <div className="item"><img src={kaironLogo} alt="" /></div>
-                  <div className="item"><img src={starterLogo} alt="" /></div>
-                  <div className="item"><img src={gondolaLogo} alt="" /></div>
+                  <div className="item image-title"><img src={starterLogo} alt="" /> Starter</div>
+                  <div className="item image-title"><img src={gondolaLogo} alt="" /> Gondola Finance</div>
                 </div>
 
                 <h3 className="blue mb10" id="nav_14">Insurance</h3>
@@ -544,13 +554,17 @@ export default function Whitepaper() {
                 <h3 className="blue mb30" id="nav_26">Roadmap</h3>
 
                 <ul className="icon-r mb30">
-                  <li>Continuous onboarding of new chains: Moonriver, Cosmos, Fantom, Solana, and Near (Aurora)</li>
+                  <li>Continuous onboarding of new chains: Cosmos, Fantom, Solana, and Near (Aurora)</li>
+                  <li>Continue forging partnership with chains, lending platforms, smart contract platforms liquidity providers, etc</li>
+                  <li>Continue forming new partnerships to integrate best-in-breed solutions for features not developed by the Relay team</li>
+                  <li>Rollout Dynamic Bridge Fees (bridge fees in function of the transaction value, useful when transferring small amounts compared to the bridge cost)</li>
                   <li>Marketing Marketing Marketing</li>
-                  <li>Implement the Relay Vault</li>
-                  <li>Rollout Dynamic Bridge Fees</li>
-                  <li>B2B: Forge partnerships with the largest chains and liquidity providers</li>
-                  <li>Q4 MEV solutions with <span className="tag_blue" style={{ width: "130px" }}>Soon</span></li>
-                  <li>Continue forming new partnerships to integrate best-in-breed solutions</li>
+                  <li>Q4:RELAY single sided staking</li>
+                  <li>Q4:Start the process to rewards ZERO legacy holders</li>
+                  <li>Q4:2021/Q1 2022 MEV solutions with Manifold Finance</li>
+                  <li>2022:The Relay Vault</li>
+                  {/* <li>Q4 MEV solutions with <span className="tag_blue" style={{ width: "130px" }}>Soon</span></li> */}
+                  
                 </ul>
 
                 <p className="mb30">As more and more blockchains become operational, there is a pressing need to move assets and capital efficiently from chain to chain. Asset interoperability is paramount to solving the issue of fragmented liquidity across chains, and Relay is leading the race to bridge all of DeFi.</p>
@@ -581,10 +595,9 @@ export default function Whitepaper() {
                     <img src={youtubeLogo} alt="" /></a></li>
                 </ul>
 
-                <h4>White Paper Version 1.0</h4>
-                <h4 className="letter-spacing">August 2nd, 2021</h4>
+                <h4>{wpVersion}</h4>
+                <h4 className="letter-spacing">{dataIssue}</h4>
               </div>
-
             </div>
           </div>
         </section>
